@@ -1,6 +1,6 @@
 
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="<JSON SECURITY KEY>"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "<SECURITY KEY>"
 
 def async_detect_document(gcs_source_uri, gcs_destination_uri):
     """OCR with PDF/TIFF as source files on GCS"""
@@ -13,7 +13,7 @@ def async_detect_document(gcs_source_uri, gcs_destination_uri):
     mime_type = 'application/pdf'
 
     # How many pages should be grouped into each json output file.
-    batch_size = 2
+    batch_size = 1
 
     client = vision.ImageAnnotatorClient()
 

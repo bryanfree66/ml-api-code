@@ -1,5 +1,5 @@
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="<JSON SECURITY KEY>"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="./bq-experiments-350102-58cedf12d9b2.json"
 
 def transcribe_file(gcs_uri):
     """Transcribe the given audio file asynchronously."""
